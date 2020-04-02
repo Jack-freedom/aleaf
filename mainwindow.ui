@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数字图像处理</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionReread_image"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>基本图像处理</string>
+    </property>
+    <addaction name="actionGray_Histogram"/>
+    <addaction name="actionNegative"/>
+    <addaction name="actionBinaryzation"/>
+   </widget>
+   <widget class="QMenu" name="menualgebraic_operation">
+    <property name="title">
+     <string>代数运算</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menugeometric_transformation">
+    <property name="title">
+     <string>几何变换</string>
+    </property>
+    <addaction name="actionMirror_X"/>
+    <addaction name="actionMirror_Y"/>
+    <addaction name="actionMirror_Centre"/>
+   </widget>
+   <widget class="QMenu" name="menucolour_image_processing">
+    <property name="title">
+     <string>彩色与调色板</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuimage_segmentation">
+    <property name="title">
+     <string>图像分割</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuadditional_function">
+    <property name="title">
+     <string>附加功能</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menualgebraic_operation"/>
+   <addaction name="menugeometric_transformation"/>
+   <addaction name="menucolour_image_processing"/>
+   <addaction name="menuimage_segmentation"/>
+   <addaction name="menuadditional_function"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>打开图像</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Gradition Histogram</string>
+   </property>
+  </action>
+  <action name="actionGradation_Histogram">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Gradation_Histogram</string>
+   </property>
+  </action>
+  <action name="actionGray_Histogram">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>直方图</string>
+   </property>
+  </action>
+  <action name="actionNegative">
+   <property name="text">
+    <string>负片</string>
+   </property>
+  </action>
+  <action name="actionBinaryzation">
+   <property name="text">
+    <string>阈值处理（二值化)</string>
+   </property>
+  </action>
+  <action name="actionMirror_X">
+   <property name="text">
+    <string>X轴镜像</string>
+   </property>
+  </action>
+  <action name="actionMirror_Y">
+   <property name="text">
+    <string>Y轴镜像</string>
+   </property>
+  </action>
+  <action name="actionMirror_Centre">
+   <property name="text">
+    <string>中心镜像</string>
+   </property>
+  </action>
+  <action name="actionReread_image">
+   <property name="text">
+    <string>图像还原</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
